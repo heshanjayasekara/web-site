@@ -1,0 +1,187 @@
+@import @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Roboto Slab",sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body{
+    background: rgb(189, 231, 234);
+    background-image: url("background img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+  }
+/*---------motto----------------*/
+.content .top_content{
+  background: #25e9d5;
+  height: 86px;
+  width: 13cz00px;
+  margin-left: 250px;
+
+}
+.top_content{
+  font-size: 30px;
+  text-align: center;
+  font-family:  "Roboto Slab",sans-serif;
+  padding-top: 20px;
+}
+
+
+  /*---------navigation bar----------------*/
+p.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-left: 10px;
+    color: beige;
+
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar{
+    
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #222;
+    padding: 30px 0;
+}
+.wrapper .sidebar h2{
+    color: beige;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px soli rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    list-style: none;
+    position: relative;
+}
+.sidebar ul li:nth-child(2) {
+    margin-bottom: 40px;
+    pointer-events: none;
+
+}
+.wrapper .sidebar ul li a{
+    color: #bdb8d7;
+    display: block;
+}
+.wrapper .sidebar ul li a .fas{
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #21217c;
+}
+.wrapper .sidebar ul li:hover a{
+    color: #fff;
+}
+.sidebar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 12px;
+    height: 8px;
+    line-height: 10px;
+        
+}
+.sidebar ul li a .icon ion-icon{
+    font-size: 1.4rem;
+
+}
+.sidebar ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 35px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*---------navigation bar Sign out button ----------------*/
+.signoutbutton{
+    margin-top: 170px;
+    margin-left: 40px;
+    background-color: rgb(14, 11, 201);
+    font-family: "Roboto Slab" ,sans-serif;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #b9b9b1;
+    
+}
+.signoutbutton:hover{
+    color: #ea0000;
+}
+
+/*------------flex box--------*/
+.flex-container1{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 200px;
+    
+}
+.flex-container2{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 200px;
+    
+    
+  
+}
+.flex-box1{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(purple,red);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    margin-top: auto;
+   
+
+}
+.flex-box2{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(purple,red);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+
+}

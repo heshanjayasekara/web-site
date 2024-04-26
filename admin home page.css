@@ -1,0 +1,378 @@
+@import @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto Slab",sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body{
+   background: white;
+   background-image: url("background img.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+
+
+
+
+
+
+
+  /*---------navigation bar----------------*/
+p.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-left: 10px;
+    color: beige;
+
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #222;
+    padding: 30px 0;
+}
+.wrapper .sidebar h2{
+    color: beige;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px soli rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    list-style: none;
+    position: relative;
+}
+.sidebar ul li:nth-child(2) {
+    margin-bottom: 40px;
+    pointer-events: none;
+
+}
+.wrapper .sidebar ul li a{
+    color: #bdb8d7;
+    display: block;
+}
+.wrapper .sidebar ul li a .fas{
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #21217c;
+}
+.wrapper .sidebar ul li:hover a{
+    color: #fff;
+}
+.sidebar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 12px;
+    height: 8px;
+    line-height: 10px;
+        
+}
+.sidebar ul li a .icon ion-icon{
+    font-size: 1.4rem;
+
+}
+.sidebar ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 35px;
+    height: 20px;
+    line-height: 20px;
+}
+.sidebar ul li a .title:hover{
+  
+}
+
+/*---------navigation bar Sign out button ----------------*/
+.signoutbutton{
+    margin-top: 190px;
+    margin-left: 40px;
+    background-color: rgb(14, 11, 201);
+    font-family: "Roboto Slab" ,sans-serif;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #b9b9b1;
+    
+}
+.signoutbutton:hover{
+    color: #ea0000;
+}
+
+
+
+
+
+
+ /* --------------------------Main------------------- */
+:root {
+  --blue: #2a2185;
+  --white: #fff;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    
+    transition: 0.5s;
+  }
+  .main.active {
+    width: calc(100% - 80px);
+    left: 80px;
+  }
+  
+  .topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    
+  }
+  
+  .toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    
+
+  }
+  
+  
+  
+  .user {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+
+
+  /* ------------------ Cards -------------------- */
+  .cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .cardBox .card {
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--blue);
+  }
+  
+  .cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  .cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: var(--black2);
+  }
+  
+  .cardBox .card:hover {
+    background: var(--blue);
+  }
+  .cardBox .card:hover .numbers,
+  .cardBox .card:hover .cardName,
+  .cardBox .card:hover .iconBx {
+    color: var(--white);
+  }
+  
+
+
+  /*------------------------Order Details List -------------- */
+  .details {
+    
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    /* margin-top: 10px; */
+  }
+  
+  .details .newloging {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  
+  /* Recent Appointment table start*/
+   
+  .details .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+  }
+  .cardHeader h2 {
+    font-weight: 600;
+    color: var(--blue);
+    
+  }
+  .cardHeader .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+  }
+  
+  .details table {
+    width: 100%;
+    height: 300px;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: var(--white);
+    border-radius: 10px;
+    
+    
+   
+  }
+  .details table thead td {
+    font-weight: 600;
+    
+    
+  }
+  .details table thead td{
+    background-color: #cf9c44b6;
+    
+  }
+
+  .details .newloging table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+  }
+  .details .newloging table tr:last-child {
+    border-bottom: none;
+  }
+  .details .newloging table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .details .newloging table tr td {
+    padding: 10px;
+  }
+  .details .newloging table tr td:last-child {
+    text-align: end;
+  }
+  .details .newloging table tr td:nth-child(2) {
+    text-align: end;
+  }
+  .details .newloging table tr td:nth-child(3) {
+    text-align: center;
+  }
+  .status.delivered {
+    padding: 2px 4px;
+    background: #8de02c;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+ 
+  
+
+ /*-------New Logging table----*/
+  .newloging .imgBx {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .newloging .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  
+  .newloging table tr td h4 span {
+    font-size: 14px;
+    color: var(--black2);
+  }
+  .newloging table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .newloging table tr:hover td h4 span {
+    color: var(--white);
+  }
+  
+
+   
